@@ -1,0 +1,28 @@
+# Environments
+venv/
+env/
+.venv/
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Databases / Data
+chroma_db/
+data/
+scratch/
+*.sqlite3
+*.db
+
+# Output / Reports
+*.pdf
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,7 @@
+# Pyrefly type checker configuration
+# Points to the project's virtual environment so imports resolve correctly
+
+[tool.pyrefly]
+python_interpreter = "./venv/Scripts/python.exe"
+site_package_path = ["./venv/Lib/site-packages"]
+search_path = ["."]

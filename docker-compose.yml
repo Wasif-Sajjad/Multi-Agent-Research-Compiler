@@ -1,0 +1,28 @@
+services:
+  # The UI service running the interactive Streamlit dashboard
+  ui:
+    build: .
+    container_name: research_compiler_ui
+    command: streamlit run ui/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data             # Persist PDFs across container restarts
+      - ./chroma_db:/app/chroma_db   # Persist vector database
+    env_file:
+      - .env                         # Inject API keys securely
+    restart: unless-stopped
+
+  # The headless API service running FastAPI
+  api:
+    build: .
+    container_name: research_compiler_api
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+    env_file:
+      - .env
+    restart: unless-stopped

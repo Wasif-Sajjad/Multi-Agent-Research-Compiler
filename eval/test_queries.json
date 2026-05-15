@@ -1,0 +1,22 @@
+[
+  "What are the main differences between LangChain and LangGraph?",
+  "How does PyMuPDF extract text from PDFs?",
+  "What is the architecture of the Llama 3.1 70B model?",
+  "Explain the core mechanics of Retrieval Augmented Generation (RAG).",
+  "Compare DuckDuckGo Search API with Tavily Search API.",
+  "What is the maximum context window size for GPT-4o?",
+  "How does ChromaDB store vectors locally?",
+  "What are the best practices for prompt engineering in 2024?",
+  "Explain the difference between zero-shot and few-shot prompting.",
+  "What are the primary use cases for semantic search?",
+  "How do sentence transformers generate embeddings?",
+  "What are the key benefits of using LangGraph for multi-agent systems?",
+  "Compare dense vs sparse vector retrieval techniques.",
+  "How does a self-reflective LLM critic improve generation quality?",
+  "What are the security implications of autonomous AI agents?",
+  "Explain the concept of 'Lost in the Middle' in LLM context windows.",
+  "How does tokenization work in the Llama 3 models?",
+  "What are the most effective chunking strategies for PDF processing?",
+  "Discuss the impact of quantization on LLM performance.",
+  "How do you evaluate RAG systems using the RAGAS framework?"
+]
